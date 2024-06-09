@@ -1,0 +1,15 @@
+.pageNotFound{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+display: flex;
+gap: 10px;
+}
+.pageNotFound>button{
+padding: 0 5px;
+border: none;
+border-radius: 5px;
+background: red;
+color: #fff;
+}

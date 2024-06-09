@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#categoryColorAdded{
+    color: red;
+}
+
+.container {
+    position: fixed;
+    width: 100vw;
+    padding-bottom: 2px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(195, 222, 247);
+    box-shadow: 0px 4px 12px 10px rgba(0, 0, 0, .05);
+}
+
+#web-logo {
+    height: 80px;
+    width: 100px;
+}
+
+.category>div {
+    display: inline;
+    margin-left: 12px;
+    font-size: 1.1rem;
+    /* color: rgba(0, 0, 255, 0.699); */
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+
+div>.active {
+    color: #b80000;
+}
+
+
+#searchBar {
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 255, 0.699);
+    border-radius: 3px;
+
+    background-color: aliceblue;
+    border-color: dodgerblue;
+    color: black;
+    font-weight: 600;
+}
+
+.search-container>#searchBar {
+    margin-right: 18px;
+}
+
+#search-Button {
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    margin-right: 5px;
+    background-color: dodgerblue;
+    border-radius: 3px;
+
+    color: black;
+    font-weight: 600;
+}
+
+#menutoggleicons{
+    display: none;
+    margin-right: 5px;
+}
+.category>.categorycolorred{
+    color: #b80000;
+}
+/* header end */
+/* //====================// */
+
+#categoryTwo-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    place-content: center;
+}
+
+#categoryTwo-box>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    color: dodgerblue;
+}
+
+
+
+.cards-container {
+    margin: 0px 30px 10px 30px;
+    padding: 110px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-container {
+    margin: 10px 10px 5px 10px;
+    width: 250px;
+    border: 1.5px solid whitesmoke;
+    background-color: #fff;
+}
+
+.card-container:hover {
+    box-shadow: 0px 4px 12px 10px rgba(0, 0, 0, .05);
+}
+
+.news-img {
+    height: 125px;
+    width: 100%;
+    background-color: rgb(208, 203, 203);
+    background-color: #fff;
+    background: linear-gradient(0.25turn, transparent, #ffffff91, transparent),
+        linear-gradient(#DDD, #DDD),
+        linear-gradient(#DDD, #DDD),
+        linear-gradient(#DDD, #DDD);
+    background-repeat: no-repeat;
+    background-size: 250px 125px, 250px 125px, 135px 20px, 210px 50px;
+    background-position: -250px 0, 0 0, 15px 150px, 15px 180px;
+    animation: newsbgloading 1.2s infinite;
+}
+
+@keyframes newsbgloading {
+    to {
+        background-position: 250px 0, 0 0, 15px 150px, 15px 180px;
+    }
+}
+
+
+
+.title-heading {
+    margin: 8px 0px 10px 5px;
+    font-size: 16px;
+    font-stretch: expanded;
+    font-family: "Lato", sans-serif;
+    line-height: 20px;
+    cursor: pointer;
+    color: #b80000;
+}
+
+.title-heading:hover {
+    text-decoration: underline;
+}
+
+.date-data {
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 16px;
+    display: flex;
+}
+
+#publish-owner {
+    font-size: 14px;
+    color: green;
+    margin-right: 5px;
+}
+
+
+.news-desc {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    height: 70px;
+
+    font-size: 14px;
+    color: #4e4d4d;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+
+    font-weight: 500;
+    line-height: 18px;
+}
+
+#read-more {
+    z-index: 999;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.743);
+    display: grid;
+    place-items: end;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#read-more:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.793);
+}
+
+footer {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-text {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: 600;
+    /* background-color: black; */
+    background-color: rgb(222, 8, 8);
+    ;
+}
+
+
+#array-zero {
+    /* height: calc(100vh - 182px) !important; */
+    height: 450px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: blue;
+    text-align: center;
+}
+
+
+/* media query for responsive webpage*/
+@media (max-width:2560px) {
+    .category>div:nth-child(7) {
+        display: none;
+    }
+
+    .category>div:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width:1440px) {
+    .category>div:nth-child(5) {
+        display: none;
+    }
+}
+
+@media (max-width:726px) {
+    .category>div:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width:628px) {
+    .category>div {
+        font-size: 15px;
+    }
+
+    #web-logo {
+        height: 70px;
+        width: 90px;
+    }
+
+    #searchBar {
+        padding: 5px 9px;
+        width: 130px;
+        font-weight: 600;
+    }
+
+    .search-container>#searchBar {
+        margin-right: 5px;
+    }
+
+    #search-Button {
+        padding: 6px 11px;
+        margin-right: 3px;
+    }
+
+}
+
+@media (max-width:562px) {
+    .category>div {
+        display: none;
+    }
+
+    #menutoggleicons {
+        display: inline;
+    }
+}
+
+
+@media (max-width:425px) {
+    #categoryTwo-box {
+        gap: 20px;
+    }
+
+    #categoryTwo-box>div {
+        gap: 15px;
+    }
+}
+
+
+
+@media (max-width:387px) {
+    #web-logo {
+        height: 60px;
+        width: 70px;
+    }
+
+    #searchBar {
+        padding: 5px 11px;
+        max-width: 130px;
+    }
+
+    #search-Button {
+        padding: 6px 12px;
+        margin-right: 3px;
+    }
+}
+
+@media (max-width:340px) {
+    #menutoggleicons {
+        display: none;
+    }
+
+    #searchBar {
+        padding: 4px 10px;
+        max-width: 120px;
+    }
+
+    #search-Button {
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width:300px) {
+    #web-logo {
+        width: 60px;
+        height: 55px;
+    }
+
+    .container {
+        justify-content: center;
+    }
+}
+
+@media (max-width:287px) {
+    .container {
+        height: fit-content;
+    }
+
+    #searchBar {
+        margin-bottom: 5px;
+    }
+
+    #search-Button {
+        margin-bottom: 5px;
+    }
+
+    .search-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

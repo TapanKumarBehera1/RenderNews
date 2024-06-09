@@ -1,0 +1,31 @@
+.btns {
+    padding: 8px 12px;
+    background-color: black;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin: 15px 5px;
+}
+
+#active {
+    background-color: rgb(222, 8, 8);
+}
+
+#btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#btns-box>button {
+    border-radius: 5px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
